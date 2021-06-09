@@ -2,4 +2,6 @@
 
 ---
 
+###### Simple Array Sum
+
 ![](./que.png)
