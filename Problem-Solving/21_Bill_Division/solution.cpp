@@ -2,24 +2,22 @@
 using namespace std;
 
 int main(){
-    int y;
-    cin>>y;
-    if(y <= 1917){
-        if(y%4 == 0){
-            cout<<"12.09."<<y;
+    int n, k, sumS=0, temp, costNS, i, charged, actual;
+    cin>>n>>k;
+    for(i=0; i<n; i++){
+        if(i == k){
+            cin>>costNS;
         }else{
-            cout<<"13.09."<<y;
+            cin>>temp;
+            sumS+=temp;
         }
-    }else if(y == 1918){
-        cout<<"26.09.1918";
+    }
+    cin>>charged;
+    actual = sumS/2;
+    if(actual == charged){
+        cout<<"Bon Appetit";
     }else{
-        if(y%400 == 0){
-            cout<<"12.09."<<y;
-        }else if(y%4 == 0 && y%100 != 0){
-            cout<<"12.09."<<y;
-        }else{
-            cout<<"13.09."<<y;
-        }
+        cout<<charged-actual;
     }
 return 0;
 }
