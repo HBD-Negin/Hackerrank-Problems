@@ -1,14 +1,10 @@
 n = input()
-st = raw_input()
-li = st.split()
-max = int(li[0])
-for i in range(n):
-    tmp = int(li[i])
-    if tmp > max :
-        max = tmp
+arr = list(map(int, input().split(" ")))
+
+max_val = max(arr)
 count = 0
-for i in range(n):
-    tmp = int(li[i])
-    if tmp == max :
+for i in arr:
+    if i == max_val:
         count += 1
+
 print(count)
