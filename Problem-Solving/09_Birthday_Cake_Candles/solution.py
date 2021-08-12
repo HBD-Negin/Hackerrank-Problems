@@ -1,4 +1,4 @@
-n = input()
+n = int(input())
 arr = list(map(int, input().split(" ")))
 
 max_val = max(arr)
