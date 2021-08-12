@@ -1,4 +1,4 @@
-st = raw_input()
+st = input()
 if st[-2] == 'A' :
     li = st.split(':')
     if li[0] == '12' :
