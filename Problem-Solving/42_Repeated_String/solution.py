@@ -1,0 +1,6 @@
+s = input()
+n = int(input())
+count = s.count('a')
+reps = n//len(s)
+addition = s[:n%len(s)].count('a')
+print(count*reps+addition)
